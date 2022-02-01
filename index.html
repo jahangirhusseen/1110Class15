@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/custom.css"> -->
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="row justify-content-center">
+            <h2 class="title"> instant data with checkbox</h2>
+            <div class="col-md-4">
+                
+                <div class="card my-4">
+                    <div class="card-body">
+                        <input type="checkbox" class="skill" id="javascript" value="Javascript"> <label for="javascript">Javascript</label><br>
+                        <input type="checkbox" class="skill" id="python" value="Python"> <label for="javascript">Python</label><br>
+                        <input type="checkbox" class="skill" id="java" value="Java"> <label for="javascript">Java</label><br>
+                        <input type="checkbox" class="skill" id="php" value="Php"> <label for="javascript">PHP</label><br>
+                        <input type="checkbox" class="skill" id="c" value="C"> <label for="javascript">C</label><br>
+                    </div>
+                   <br>
+                    <ul class="list-group skillall"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+     <div class="container">
+        <div class="row justify-content-center">
+         <h2 class="title"> analog clock</h2>
+         <div class="col-md-6 d-flex justify-content-center"> 
+             <div class="clock">
+                <div class="h"></div>
+                <div class="m"></div>
+                <div class="s"></div>
+         </div>
+     </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <h2 class="title">Calculator</h2>
+            <div class="col-md-4 d-flex justify-content-center">
+            <div class="calculator shadow">
+                <div class="display">
+                    <div class="history">0</div>
+                    <div class="result"></div>
+                </div>
+                <div class="buttons">
+                    <button onclick="valGet('7')">7</button>
+                    <button onclick="valGet('8')">8</button>
+                    <button onclick="valGet('9')">9</button>
+                    <button onclick="valGet('/')">/</button>
+                    <button onclick="valGet('4')">4</button>
+                    <button onclick="valGet('5')">5</button>
+                    <button onclick="valGet('6')">6</button>
+                    <button onclick="valGet('*')">*</button>
+                    <button onclick="valGet('1')">1</button>
+                    <button onclick="valGet('2')">2</button>
+                    <button onclick="valGet('3')">3</button>
+                    <button onclick="valGet('+')">+</button>
+                    <button onclick="valGet('0')">0</button>
+                    <button onclick="valGet('.')">.</button>
+                    <button onclick="finnalres()">=</button>
+                    <button onclick="valGet('-')">-</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+   
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

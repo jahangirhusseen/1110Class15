@@ -1,0 +1,135 @@
+/* ========== Clock =========== */
+
+.title{
+    text-align: center;
+    text-transform:capitalize;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: chocolate;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+
+.clock {
+    width: 400px;
+    height: 400px;
+    background-image: url('../imgs/clock.png');
+    background-size: cover;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px double rgb(88, 83, 83);
+
+    
+}
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000;
+
+}
+.s{
+    width: 0px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(0deg);
+   
+}
+.s::before{
+    width: 5px;
+    height: 150px;
+    content: '';
+    position: absolute;
+    background-color: tomato;
+    
+}
+
+.m{
+    width: 0px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(25deg);
+   
+}  
+.m::before{
+    width: 5px;
+    height: 140px;
+    content: '';
+    position: absolute;
+    background-color: #000;
+    
+}
+
+.h{
+    width: 0px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(90deg);
+   
+}  
+.h::before{
+    width: 5px;
+    height: 100px;
+    content: '';
+    position: absolute;
+    background-color: #000;
+    
+}
+
+
+
+/* ========== Calculator =========== */
+
+.calculator{
+    align-items: center;
+    padding: 15px 0px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.display {
+   position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 0 45px;
+    box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.2);
+}
+.history,.result{
+    font-size: 32px;
+    font-weight: 500;
+    text-align: right;
+}
+.buttons {
+    margin-top: 15px;
+    width: 100%
+   
+}
+
+.buttons button {   
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    margin: 8px 10px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1)
+}
+
+.buttons button:hover {
+    background: rgba(0, 0, 0, 0.2)
+}
